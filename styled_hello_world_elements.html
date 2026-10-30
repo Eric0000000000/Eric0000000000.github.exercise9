@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Hello World Elements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom border styles matching the screenshot */
+        .box-1 {
+            background-color: #ADD8E6; /* Light blue */
+            border: 6px double #FF6347; /* Double coral/tomato red border */
+            padding: 12px 20px;
+            margin-bottom: 24px;
+        }
+
+        .box-2 {
+            background-color: #FFFF00; /* Bright yellow */
+            border: 2px solid #007BFF; /* Solid blue border */
+            border-radius: 18px; /* Rounded corners */
+            padding: 12px 20px;
+            margin-bottom: 24px;
+        }
+
+        .box-3 {
+            background-color: #3CB371; /* Medium sea green */
+            border: 6px dotted #666666; /* Dotted gray border */
+            padding: 12px 20px;
+            margin-bottom: 24px;
+        }
+
+        /* Typography matching default browser serif style in image */
+        .hello-text {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000000;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 font-sans">
+
+    <!-- Container Card -->
+    <div class="bg-white p-6 sm:p-10 rounded-xl shadow-2xl max-w-2xl w-full border border-slate-200">
+        
+        <h1 class="text-xl font-semibold text-slate-700 mb-6 text-center border-b pb-3">
+            CSS Border & Background Demonstration
+        </h1>
+
+        <!-- Box 1: Double Red Border on Light Blue -->
+        <div class="box-1">
+            <p class="hello-text">Hello World</p>
+        </div>
+
+        <!-- Box 2: Solid Blue Border with Rounded Corners on Yellow -->
+        <div class="box-2">
+            <p class="hello-text">Hello World</p>
+        </div>
+
+        <!-- Box 3: Dotted Gray Border on Medium Green -->
+        <div class="box-3">
+            <p class="hello-text">Hello World</p>
+        </div>
+
+        <!-- CSS Details Accordion / Reference -->
+        <div class="mt-8 pt-4 border-t border-slate-200">
+            <h2 class="text-xs uppercase tracking-wider text-slate-500 font-bold mb-3">Styles Reference Summary</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                <div class="p-3 bg-slate-50 rounded border border-slate-200">
+                    <span class="font-semibold block text-slate-700">Top Box:</span>
+                    <p class="text-slate-600 mt-1">Background: <code>#ADD8E6</code></p>
+                    <p class="text-slate-600">Border: <code>6px double #FF6347</code></p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded border border-slate-200">
+                    <span class="font-semibold block text-slate-700">Middle Box:</span>
+                    <p class="text-slate-600 mt-1">Background: <code>#FFFF00</code></p>
+                    <p class="text-slate-600">Border: <code>2px solid #007BFF</code></p>
+                    <p class="text-slate-600">Radius: <code>18px</code></p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded border border-slate-200">
+                    <span class="font-semibold block text-slate-700">Bottom Box:</span>
+                    <p class="text-slate-600 mt-1">Background: <code>#3CB371</code></p>
+                    <p class="text-slate-600">Border: <code>6px dotted #666666</code></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
